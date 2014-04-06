@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+	<formbeans>
+		<bean name="login" class="com.liuyu.web.form.LoginForm"/>
+	</formbeans>
+	<action-mapping>
+		<action name="login" type="com.liuyu.web.action.LoginAction" path="/login">
+			<forward name="chenggong" value="/view/ok.jsp"></forward>
+			<forward name="shibai" value="/view/no.jsp"></forward>
+		</action>
+	</action-mapping>
+</struts>
